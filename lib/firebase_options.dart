@@ -17,10 +17,7 @@ import 'package:flutter/foundation.dart'
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
-      throw UnsupportedError(
-        'DefaultFirebaseOptions have not been configured for web - '
-        'you can reconfigure this by running the FlutterFire CLI again.',
-      );
+      return web;
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
@@ -28,10 +25,7 @@ class DefaultFirebaseOptions {
       case TargetPlatform.iOS:
         return ios;
       case TargetPlatform.macOS:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for macos - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return macos;
       case TargetPlatform.windows:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for windows - '
@@ -49,6 +43,15 @@ class DefaultFirebaseOptions {
     }
   }
 
+  static const FirebaseOptions web = FirebaseOptions(
+    apiKey: 'AIzaSyAuy4bgSJQEnnSQSHJIH85XbMIE8FfwhlM',
+    appId: '1:1080110563274:web:bdecdc4b73edf2f7b7d933',
+    messagingSenderId: '1080110563274',
+    projectId: 'jobtimercs',
+    authDomain: 'jobtimercs.firebaseapp.com',
+    storageBucket: 'jobtimercs.appspot.com',
+  );
+
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyC_q1PnnyBUPwY7CQn3QXoYrasK5ESezuw',
     appId: '1:1080110563274:android:86921a9269756edab7d933',
@@ -63,6 +66,18 @@ class DefaultFirebaseOptions {
     messagingSenderId: '1080110563274',
     projectId: 'jobtimercs',
     storageBucket: 'jobtimercs.appspot.com',
+    androidClientId: '1080110563274-5tg36252ear1jidqukee3b379h8t185n.apps.googleusercontent.com',
+    iosClientId: '1080110563274-td1jgkc6ad5jobvkogl230g7ejn2ghbh.apps.googleusercontent.com',
+    iosBundleId: 'br.com.rcsbinfo.jobTimercs',
+  );
+
+  static const FirebaseOptions macos = FirebaseOptions(
+    apiKey: 'AIzaSyB3PrStJGYWNLdpVwQLRQkcJgecMIQQiHM',
+    appId: '1:1080110563274:ios:31308e0898d06473b7d933',
+    messagingSenderId: '1080110563274',
+    projectId: 'jobtimercs',
+    storageBucket: 'jobtimercs.appspot.com',
+    androidClientId: '1080110563274-5tg36252ear1jidqukee3b379h8t185n.apps.googleusercontent.com',
     iosClientId: '1080110563274-td1jgkc6ad5jobvkogl230g7ejn2ghbh.apps.googleusercontent.com',
     iosBundleId: 'br.com.rcsbinfo.jobTimercs',
   );

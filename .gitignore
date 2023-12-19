@@ -48,3 +48,4 @@ app.*.map.json
 
 kyes.txt
 .vscode/
+.env

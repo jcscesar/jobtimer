@@ -14,6 +14,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "1080110563274-5tg36252ear1jidqukee3b379h8t185n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.rcsbinfo.job_timer",
+            "certificate_hash": "2e50597f1b801ffce70c9d4a055727d3400b19bd"
+          }
+        },
+        {
           "client_id": "1080110563274-8vrktuhnbj76tk4kllrm01s68vmk1mdk.apps.googleusercontent.com",
           "client_type": 3
         }
