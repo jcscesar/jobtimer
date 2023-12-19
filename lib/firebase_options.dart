@@ -17,7 +17,10 @@ import 'package:flutter/foundation.dart'
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
-      return web;
+      throw UnsupportedError(
+        'DefaultFirebaseOptions have not been configured for web - '
+        'you can reconfigure this by running the FlutterFire CLI again.',
+      );
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
@@ -25,7 +28,10 @@ class DefaultFirebaseOptions {
       case TargetPlatform.iOS:
         return ios;
       case TargetPlatform.macOS:
-        return macos;
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for macos - '
+          'you can reconfigure this by running the FlutterFire CLI again.',
+        );
       case TargetPlatform.windows:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for windows - '
@@ -43,18 +49,9 @@ class DefaultFirebaseOptions {
     }
   }
 
-  static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyAuy4bgSJQEnnSQSHJIH85XbMIE8FfwhlM',
-    appId: '1:1080110563274:web:bdecdc4b73edf2f7b7d933',
-    messagingSenderId: '1080110563274',
-    projectId: 'jobtimercs',
-    authDomain: 'jobtimercs.firebaseapp.com',
-    storageBucket: 'jobtimercs.appspot.com',
-  );
-
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyC_q1PnnyBUPwY7CQn3QXoYrasK5ESezuw',
-    appId: '1:1080110563274:android:beda846a0414d90fb7d933',
+    appId: '1:1080110563274:android:86921a9269756edab7d933',
     messagingSenderId: '1080110563274',
     projectId: 'jobtimercs',
     storageBucket: 'jobtimercs.appspot.com',
@@ -62,19 +59,11 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions ios = FirebaseOptions(
     apiKey: 'AIzaSyB3PrStJGYWNLdpVwQLRQkcJgecMIQQiHM',
-    appId: '1:1080110563274:ios:6203cf3e6d6dbeb4b7d933',
+    appId: '1:1080110563274:ios:31308e0898d06473b7d933',
     messagingSenderId: '1080110563274',
     projectId: 'jobtimercs',
     storageBucket: 'jobtimercs.appspot.com',
-    iosBundleId: 'br.com.rcsbinfo.jobTimer',
-  );
-
-  static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyB3PrStJGYWNLdpVwQLRQkcJgecMIQQiHM',
-    appId: '1:1080110563274:ios:6203cf3e6d6dbeb4b7d933',
-    messagingSenderId: '1080110563274',
-    projectId: 'jobtimercs',
-    storageBucket: 'jobtimercs.appspot.com',
-    iosBundleId: 'br.com.rcsbinfo.jobTimer',
+    iosClientId: '1080110563274-td1jgkc6ad5jobvkogl230g7ejn2ghbh.apps.googleusercontent.com',
+    iosBundleId: 'br.com.rcsbinfo.jobTimercs',
   );
 }

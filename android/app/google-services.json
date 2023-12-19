@@ -12,7 +12,12 @@
           "package_name": "br.com.rcsbinfo.job_timer"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "1080110563274-8vrktuhnbj76tk4kllrm01s68vmk1mdk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyC_q1PnnyBUPwY7CQn3QXoYrasK5ESezuw"
@@ -20,7 +25,55 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1080110563274-8vrktuhnbj76tk4kllrm01s68vmk1mdk.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1080110563274-icokhqislcahvig54n56hp36cki61nuk.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "br.com.rcsbinfo.jobTimer"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1080110563274:android:86921a9269756edab7d933",
+        "android_client_info": {
+          "package_name": "br.com.rcsbinfo.job_timercs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1080110563274-8vrktuhnbj76tk4kllrm01s68vmk1mdk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_q1PnnyBUPwY7CQn3QXoYrasK5ESezuw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1080110563274-8vrktuhnbj76tk4kllrm01s68vmk1mdk.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1080110563274-icokhqislcahvig54n56hp36cki61nuk.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "br.com.rcsbinfo.jobTimer"
+              }
+            }
+          ]
         }
       }
     }

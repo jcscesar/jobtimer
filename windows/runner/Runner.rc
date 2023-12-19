@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "br.com.rcsbinfo" "\0"
-            VALUE "FileDescription", "job_timer" "\0"
+            VALUE "FileDescription", "job_timercs" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "job_timer" "\0"
+            VALUE "InternalName", "job_timercs" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2023 br.com.rcsbinfo. All rights reserved." "\0"
-            VALUE "OriginalFilename", "job_timer.exe" "\0"
-            VALUE "ProductName", "job_timer" "\0"
+            VALUE "OriginalFilename", "job_timercs.exe" "\0"
+            VALUE "ProductName", "job_timercs" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

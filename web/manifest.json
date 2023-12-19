@@ -1,6 +1,6 @@
 {
-    "name": "job_timer",
-    "short_name": "job_timer",
+    "name": "job_timercs",
+    "short_name": "job_timercs",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

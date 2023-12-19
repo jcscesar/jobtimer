@@ -1,4 +1,4 @@
-package br.com.rcsbinfo.job_timer
+package br.com.rcsbinfo.job_timercs
 
 import io.flutter.embedding.android.FlutterActivity
 
