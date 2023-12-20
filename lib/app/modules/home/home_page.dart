@@ -8,10 +8,26 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: const Drawer(
+      drawer: Drawer(
         child: SafeArea(
-          child: ListTile(
-            title: Text('Sair'),
+          child: Column(
+            children: [
+              SizedBox(
+                height: MediaQuery.sizeOf(context).height * .03,
+              ),
+              ClipRRect(
+                borderRadius: BorderRadius.circular(20),
+                child: Image.asset(
+                  'assets/images/logo.png',
+                  fit: BoxFit.contain,
+                  height: 150,
+                  width: 150,
+                ),
+              ),
+              const ListTile(
+                title: Text('Sair'),
+              ),
+            ],
           ),
         ),
       ),

@@ -17,6 +17,7 @@ class LoginController extends Cubit<LoginState> {
     try {
       emit(state.copyWith(status: LoginStatus.loading));
       final resultLogin = await _authService.signIn();
+      log('resultLogin: ${resultLogin}');
       if (resultLogin == false) {
         emit(state.copyWith(status: LoginStatus.failure));
         return false;

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:job_timercs/app/core/constansts.dart';
 import 'package:job_timercs/app/core/infra/entities/project_status.dart';
+import 'package:job_timercs/app/modules/project/register/project_register_page.dart';
 
 class HeaderProjectMenu extends SliverPersistentHeaderDelegate {
   @override
@@ -26,12 +27,15 @@ class HeaderProjectMenu extends SliverPersistentHeaderDelegate {
                       borderRadius: BorderRadius.circular(20),
                     ),
                     alignLabelWithHint: true,
-                    contentPadding:
-                        const EdgeInsets.symmetric(vertical: 10, horizontal: 5),
+                    contentPadding: const EdgeInsets.symmetric(
+                      vertical: 10,
+                      horizontal: 5,
+                    ),
                     floatingLabelAlignment: FloatingLabelAlignment.center,
                     isCollapsed: true,
-                    suffixIcon: const Icon(
-                      Icons.download,
+                    suffixIcon: Icon(
+                      Icons.download_for_offline_rounded,
+                      color: ColorsThemes.brow,
                     ),
                     suffixStyle: TextStyle(
                       color: ColorsThemes.brow,
@@ -58,7 +62,9 @@ class HeaderProjectMenu extends SliverPersistentHeaderDelegate {
                 width: constraints.maxWidth * .4,
                 height: constraints.maxHeight * .6,
                 child: ElevatedButton.icon(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.of(context).pushNamed('/project/register');
+                  },
                   style: ButtonStyle(
                     backgroundColor:
                         MaterialStatePropertyAll(ColorsThemes.brow),
