@@ -15,7 +15,7 @@ class ThemeCustom {
     primaryColorLight: const Color(0xFF016e13),
     primaryColorDark: const Color(0xFF016e13),
     fontFamily: FontConstants.fontFamily,
-
+    brightness: Brightness.dark,
     appBarTheme: AppBarTheme(
       centerTitle: true,
       iconTheme: IconThemeData(color: ColorsThemes.brow),

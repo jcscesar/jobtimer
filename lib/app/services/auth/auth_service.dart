@@ -1,4 +1,4 @@
 abstract class AuthService {
-  Future<void> signIn();
+  Future<bool> signIn();
   Future<void> signOut();
 }

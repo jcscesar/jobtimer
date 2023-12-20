@@ -13,16 +13,22 @@ class LoginController extends Cubit<LoginState> {
       : _authService = authService,
         super(const LoginState.initial());
 
-  Future<void> signIn() async {
+  Future<bool> signIn() async {
     try {
       emit(state.copyWith(status: LoginStatus.loading));
-      await _authService.signIn();
+      final resultLogin = await _authService.signIn();
+      if (resultLogin == false) {
+        emit(state.copyWith(status: LoginStatus.failure));
+        return false;
+      }
+      return true;
     } on Exception catch (e, s) {
       log('Error ao realizar login', error: e, stackTrace: s);
       emit(state.copyWith(
         status: LoginStatus.failure,
         errorMessage: 'Error ao realizar login',
       ));
+      return false;
     }
   }
 }
