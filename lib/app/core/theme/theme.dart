@@ -10,7 +10,7 @@ class ThemeCustom {
 
   static ThemeData themeData = ThemeData(
     useMaterial3: true,
-    //primarySwatch: ColorsThemes.primarySwatch,
+    // primarySwatch: ColorsThemes.primarySwatch,
     primaryColor: const Color(0xFF016e13),
     primaryColorLight: const Color(0xFF016e13),
     primaryColorDark: const Color(0xFF016e13),
@@ -18,7 +18,7 @@ class ThemeCustom {
     brightness: Brightness.dark,
     appBarTheme: AppBarTheme(
       centerTitle: true,
-      iconTheme: IconThemeData(color: ColorsThemes.brow),
+      iconTheme: IconThemeData(color: ColorsThemes.white),
       titleTextStyle: TextStyle(
         fontFamily: FontConstants.fontFamily,
         color: ColorsThemes.brow,
@@ -52,6 +52,11 @@ class ThemeCustom {
       errorBorder: _defaultInputBorder.copyWith(
         borderSide: BorderSide(color: ColorsThemes.red),
       ),
+    ),
+    drawerTheme: DrawerThemeData(
+      backgroundColor: ColorsThemes.brow,
+      shadowColor: Colors.white,
+      surfaceTintColor: Colors.amber,
     ),
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(
