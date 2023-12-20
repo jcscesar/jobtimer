@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:developer';
 
 import 'package:asuka/snackbars/asuka_snack_bar.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -11,7 +12,7 @@ class AuthServiceImpl implements AuthService {
   Future<bool> signIn() async {
     try {
       final googleUser = await GoogleSignIn().signIn();
-
+      log('googleUser: $googleUser');
       if (googleUser == null) {
         AsukaSnackbar.alert('Usuario não existe ou não selecionado').show();
         return false;

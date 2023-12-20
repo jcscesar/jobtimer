@@ -60,10 +60,12 @@ class ThemeCustom {
     ),
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(
+        backgroundColor: ColorsThemes.brow,
         alignment: Alignment.center,
         shape: RoundedRectangleBorder(
           borderRadius: _borderRadius,
         ),
+        textStyle: TextStyle(color: ColorsThemes.white),
       ),
     ),
     outlinedButtonTheme: OutlinedButtonThemeData(

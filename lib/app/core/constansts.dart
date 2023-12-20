@@ -15,6 +15,7 @@ class ColorsThemes {
   static Color white = const Color(0xffFFFFFF);
   static Color grey = const Color(0xff999999);
   static Color brow = const Color(0xFF016E13);
+  static Color greenLight = Color.fromARGB(251, 190, 238, 198);
   static Color greyligth = const Color(0xffE6E2E9);
   static Color greyligthCalendar = const Color.fromARGB(255, 90, 89, 90);
   static Color greyAvatar = const Color(0xffbdbdbd);

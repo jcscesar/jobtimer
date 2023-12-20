@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:job_timercs/app/core/constansts.dart';
 import 'package:job_timercs/app/core/infra/entities/project_status.dart';
-import 'package:job_timercs/app/modules/project/register/project_register_page.dart';
 
 class HeaderProjectMenu extends SliverPersistentHeaderDelegate {
   @override

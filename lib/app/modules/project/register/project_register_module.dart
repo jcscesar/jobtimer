@@ -3,13 +3,7 @@ import 'package:job_timercs/app/modules/project/register/project_register_page.d
 
 class ProjectRegisterModule extends Module {
   @override
-  List<Bind<Object>> get binds => [];
-
-  @override
   List<ModularRoute> get routes => [
-        ChildRoute(
-          '/',
-          child: (context, args) => const ProjectRegisterPage(),
-        ),
+        ChildRoute('/', child: (context, args) => const ProjectRegisterPage()),
       ];
 }
