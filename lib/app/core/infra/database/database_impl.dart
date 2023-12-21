@@ -6,10 +6,11 @@ import 'package:path_provider/path_provider.dart';
 import './database.dart';
 
 class DatabaseImpl implements Database {
-  Isar? _databaseInstance;
+  late Isar _databaseInstance;
 
   @override
   Future<Isar> openConnection() async {
+    // ignore: unnecessary_null_comparison
     if (_databaseInstance == null) {
       final dir = await getApplicationDocumentsDirectory();
       _databaseInstance = await Isar.open(
@@ -21,6 +22,6 @@ class DatabaseImpl implements Database {
         inspector: true,
       );
     }
-    return _databaseInstance!;
+    return _databaseInstance;
   }
 }
