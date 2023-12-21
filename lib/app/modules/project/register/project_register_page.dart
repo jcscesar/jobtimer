@@ -36,10 +36,6 @@ class _ProjectRegisterPageState extends State<ProjectRegisterPage> {
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(8),
               shape: BoxShape.rectangle,
-              border: Border.all(
-                color: ColorsThemes.greenLight, // Border color
-                width: 2.0, // Border width
-              ),
             ),
             child: SingleChildScrollView(
               child: Form(
