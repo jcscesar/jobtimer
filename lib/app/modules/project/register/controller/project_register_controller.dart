@@ -1,5 +1,4 @@
 import 'package:bloc/bloc.dart';
-import 'package:job_timercs/app/modules/project/register/controller/project_register_state.dart';
 import 'package:job_timercs/app/services/project/project_service.dart';
 
 part 'project_register_state.dart';
